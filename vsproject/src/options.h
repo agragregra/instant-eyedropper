@@ -16,7 +16,7 @@
 
 #include <vector>
 #include <string>
-#include <ctime>
+// #include <ctime>
 using namespace std;
 
 #include "resource.h"
@@ -153,8 +153,8 @@ public:
         _cancelbutton               (hwnddlg, IDCANCEL)             // common button
     {
 
-        std::string copyrightText = "\xa9 2005-" + getCurrentYear();
-        SetWindowText(_static_copy.hwnd(), copyrightText.c_str());
+        // std::string copyrightText = "\xa9 2005-" + getCurrentYear();
+        // SetWindowText(_static_copy.hwnd(), copyrightText.c_str());
 
         _data = (optionsdata*)getarglist();
 

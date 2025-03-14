@@ -13,8 +13,8 @@
 void optionscontroller::initialization()
 {
 
-    std::string copyrightText = "\xa9 2005-" + getCurrentYear();
-    SetWindowText(_static_copy.hwnd(), copyrightText.c_str());
+    // std::string copyrightText = "\xa9 2005-" + getCurrentYear();
+    // SetWindowText(_static_copy.hwnd(), copyrightText.c_str());
 
     /* маякнем родителю, передадим хэндл, он установит флаг */
     _hwndparent.sendmessage(WM_PARENTNOTIFY, MAKEWPARAM(WM_CREATE, IDD_DIALOG), (LPARAM)(HWND)_hwnd);
