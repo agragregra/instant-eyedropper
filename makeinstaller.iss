@@ -14,7 +14,8 @@ WindowVisible        = no
 Compression          = lzma/ultra
 SolidCompression     = true
 OutputDir            = /
-OutputBaseFilename   = instant-eyedropper-{#productversion}
+// OutputBaseFilename   = instant-eyedropper-{#productversion}
+OutputBaseFilename   = instant-eyedropper
 LicenseFile          = {#SourcePath}vsproject\output\license.txt
 UninstallDisplayIcon = {app}\InstantEyedropper.exe
 

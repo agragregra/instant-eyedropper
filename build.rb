@@ -111,7 +111,8 @@ if $version
 
   # Собрать ZIP
   $src = "#{$currentdir}/vsproject/output"
-  $zip = "#{$zipname}-#{$version}.zip"
+  # $zip = "#{$zipname}-#{$version}.zip"
+  $zip = "#{$zipname}.zip"
   FileUtils.rm($zip) if File.exist?($zip)
   FileUtils.cp_r $src, $newdir
 
