@@ -16,6 +16,7 @@
 
 #include <vector>
 #include <string>
+#include <ctime>
 using namespace std;
 
 #include "resource.h"
@@ -32,6 +33,15 @@ using namespace std;
 
 /***********************************************************************************************************/
 // data storage for the options dialogbox
+
+inline std::string getCurrentYear() {
+    time_t now = time(0);
+    tm ltm;
+    localtime_s(&ltm, &now);
+    int year = 1900 + ltm.tm_year;
+    return std::to_string(year);
+}
+
 class optionsdata
 {
 public:
@@ -142,6 +152,10 @@ public:
         _okbutton                   (hwnddlg, IDOK),                // common button
         _cancelbutton               (hwnddlg, IDCANCEL)             // common button
     {
+
+        std::string copyrightText = "\xa9 2005-" + getCurrentYear();
+        SetWindowText(_static_copy.hwnd(), copyrightText.c_str());
+
         _data = (optionsdata*)getarglist();
 
         // соберем хэндлы контролов для каждой вкладки в одном месте

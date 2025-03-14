@@ -87,10 +87,10 @@ BEGIN
     CONTROL         "", IDCO_ABOUT, "Static", SS_OWNERDRAW, 16, 28, 255, 97
         LTEXT           "0.0.0.0",                  IDCT_VERSION,        93,  56,  26,  8
         LTEXT           "Home:",                    IDCT_HOME,           94,  92,  24,  8
-        LTEXT           "\xa9 2005-2020",              IDCT_COPYRIGHT,   93,  103, 44,  8
+        LTEXT           "\xa9 2005-2025",              IDCT_COPYRIGHT,   93,  103, 44,  8
         LTEXT           "instant-eyedropper.com",   IDCT_IEYEDROPPERURL, 118, 92,  101, 8
         LTEXT           "Konstantin Yagola",        IDCT_AUTHOR,         139, 103, 120,  8
-        PUSHBUTTON      "Check for updates",        IDB_UPDATE,          93,  67,  70, 14
+        // PUSHBUTTON      "Check for updates",        IDB_UPDATE,          93,  67,  70, 14
 
     PUSHBUTTON      "OK",     IDOK,     170, 138, 50, 14
     PUSHBUTTON      "Cancel", IDCANCEL, 230, 138, 50, 14
