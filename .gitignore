@@ -5,7 +5,6 @@ vsproject/release
 *.sdf
 *.opensdf
 *.exe
-*.zip
 *.manifest
 *.ilk
 *.chm
